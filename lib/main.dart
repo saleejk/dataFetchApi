@@ -1,5 +1,5 @@
-import 'package:demo_task/controller/clothing_controller.dart';
-import 'package:demo_task/view/home.dart';
+import 'package:demo_task/Home.dart';
+import 'package:demo_task/controller/cloth_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ChangeNotifierProvider(
-      create: (context) => cloth(),
+      create: (context) => ClothProvider(),
       child: MaterialApp(
         title: 'Flutter Demo',
         theme: ThemeData(),
